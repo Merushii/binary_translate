@@ -14,5 +14,10 @@ namespace binarytranslate
         {
             InitializeComponent();
         }
+
+        private void irPagBinToText(object sender, EventArgs e)
+        {
+            this.Navigation.PushModalAsync(new BinToTextPage());
+        }
     }
 }

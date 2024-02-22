@@ -24,8 +24,8 @@
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20" Margin="35,10">
             <Button Text="Copiar" TextColor="White" FontSize="20" FontAttributes="Bold" BackgroundColor="#1E0A44" 
                 BorderColor="#8C52FF" BorderWidth="2" CornerRadius="10" WidthRequest="150" />
-            <Button Text="Página de binario a texto" TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#1E0A44" 
-                BorderColor="#8C52FF" BorderWidth="2" CornerRadius="10" WidthRequest="150"  />
+            <Button Text="Página de binario a texto" x:Name="irBinText" TextColor="White" FontSize="15" FontAttributes="Bold" BackgroundColor="#1E0A44" 
+                BorderColor="#8C52FF" BorderWidth="2" CornerRadius="10" WidthRequest="150" Clicked="irPagBinToText" />
         </StackLayout>
 
     </StackLayout>
