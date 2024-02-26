@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "binarytranslate.Android", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "binarytranslate.iOS", "binarytranslate.iOS\binarytranslate.iOS.csproj", "{25AFE2E1-729A-4F3C-B1C3-520F8A001755}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "binarytranslate", "binarytranslate\binarytranslate.csproj", "{699F2F52-F934-414D-8B72-BCBEF68D78F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "binarytranslate", "binarytranslate\binarytranslate.csproj", "{699F2F52-F934-414D-8B72-BCBEF68D78F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
