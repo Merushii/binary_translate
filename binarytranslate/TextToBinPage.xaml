@@ -36,29 +36,54 @@
             Margin="35,10" 
             Placeholder="Ingrese texto a traducir"
             x:Name="entryText"/>
-        <Button 
-            x:Name="btnTextToBinary" 
-            Text="Traducir" 
-            TextColor="White" 
-            FontSize="20" 
-            FontAttributes="Bold" 
-            BackgroundColor="#1E0A44" 
-            BorderColor="#8C52FF" 
-            BorderWidth="2" 
-            CornerRadius="10" 
-            Margin="35, 10" 
-            Clicked="translateToBinary"/>
-        <Frame 
+        <StackLayout
+            Orientation="Horizontal" 
+            HorizontalOptions="Center" 
+            Spacing="20" Margin="35,10">
+
+            <Button 
+                x:Name="btnTextToBinary" 
+                Text="Traducir" 
+                TextColor="White" 
+                FontSize="20" 
+                FontAttributes="Bold" 
+                BackgroundColor="#1E0A44" 
+                BorderColor="#8C52FF" 
+                BorderWidth="2" 
+                CornerRadius="10" 
+                Margin="0, 0" 
+                WidthRequest="150"
+                Clicked="translateToBinary"/>
+
+            <Button 
+                x:Name="borrarText" 
+                Text="Borrar" 
+                TextColor="White" 
+                FontSize="20" 
+                FontAttributes="Bold" 
+                BackgroundColor="#1E0A44" 
+                BorderColor="#8C52FF" 
+                BorderWidth="2" 
+                CornerRadius="10" 
+                Margin="0, 0"
+                WidthRequest="150"
+                Clicked="borrarTexto"/>
+
+        </StackLayout>
+        
+        <ScrollView 
             BackgroundColor="#3A117F" 
             Padding="15" 
             Margin="35,10" 
             HeightRequest="150">
+
             <Label 
                 x:Name="textInBinary"
                 TextColor="DarkGray" 
                 FontSize="18" 
-                Padding="5, 5"/>
-        </Frame>
+                Padding="5, 5"
+                HorizontalOptions="StartAndExpand"/>
+        </ScrollView>
         <StackLayout 
             Orientation="Horizontal" 
             HorizontalOptions="Center" 

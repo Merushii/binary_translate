@@ -48,5 +48,10 @@ namespace binarytranslate
                 await DisplayAlert("", "Se ha copiado correctamente al portapapeles", "Aceptar");
             }
         }
+
+        private void borrarTexto(object sender, EventArgs e)
+        {
+            entryBinary.Text = null;
+        }
     }
 }

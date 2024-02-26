@@ -53,6 +53,11 @@ namespace binarytranslate
             }
         }
 
+        private void borrarTexto(object sender, EventArgs e)
+        {
+            entryText.Text = null;
+        }
+
         private void irPagBinToText(object sender, EventArgs e)
         {
             this.Navigation.PushModalAsync(new BinToTextPage());
