@@ -9,22 +9,84 @@
             <!--<ActivityIndicator
     Color="Blue"
     IsRunning="True"/>-->
-            <Frame BackgroundColor="#1E0A44" Padding="15" >
-                <Label Text="Traductor Binario" HorizontalTextAlignment="Center" TextColor="White" FontSize="40" Padding="20, 10"/>
+            <Frame 
+                BackgroundColor="#1E0A44" 
+                Padding="15" >
+                <Label 
+                    Text="Traductor Binario" 
+                    HorizontalTextAlignment="Center" 
+                    TextColor="White" 
+                    FontSize="40" 
+                    Padding="20, 10"/>
             </Frame>
-            <Label Text="BINARIO A TEXTO" FontSize="Title" Padding="30,10,30,30" TextColor="White" HorizontalTextAlignment="Center"/>
-            <Label Text="Código binario a traducir" FontSize="18" Padding="30,0,30,0" TextColor="White"/>
-            <Editor BackgroundColor="#3A117F" AutoSize="TextChanges" HeightRequest="150" Margin="35,10" Placeholder="Ingrese código binario a traducir" Keyboard="Numeric"/>
-            <Button x:Name="binaryToText" Text="Traducir" TextColor="White" FontSize="20" FontAttributes="Bold" BackgroundColor="#1E0A44" 
-    BorderColor="#8C52FF" BorderWidth="2" CornerRadius="10" Margin="35, 10" />
-            <Frame BackgroundColor="#3A117F" Padding="15" Margin="35,10" HeightRequest="150">
-                <Label Text="" TextColor="DarkGray" FontSize="18" Padding="5, 5"/>
+            <Label 
+                Text="BINARIO A TEXTO" 
+                FontSize="Title" 
+                Padding="30,10,30,30" 
+                TextColor="White" 
+                HorizontalTextAlignment="Center"/>
+            <Label 
+                Text="Código binario a traducir" 
+                FontSize="18" 
+                Padding="30,0,30,0" 
+                TextColor="White"/>
+            <Editor 
+                x:Name="entryBinary"
+                BackgroundColor="#3A117F" 
+                AutoSize="TextChanges" 
+                HeightRequest="150" 
+                Margin="35,10" 
+                Placeholder="Ingrese código binario a traducir" 
+                Keyboard="Numeric"/>
+            <Button 
+                x:Name="binaryToText" 
+                Text="Traducir" 
+                TextColor="White" 
+                FontSize="20" 
+                FontAttributes="Bold" 
+                BackgroundColor="#1E0A44" 
+                BorderColor="#8C52FF" 
+                BorderWidth="2" 
+                CornerRadius="10" 
+                Margin="35, 10"
+                Clicked="translateTextToBinary"/>
+            <Frame 
+                BackgroundColor="#3A117F" 
+                Padding="15" 
+                Margin="35,10" 
+                HeightRequest="150">
+                <Label 
+                    x:Name="binaryInText"
+                    TextColor="DarkGray" 
+                    FontSize="18" 
+                    Padding="5, 5"/>
             </Frame>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20" Margin="35,10">
-                <Button Text="Copiar" TextColor="White" FontSize="20" FontAttributes="Bold" BackgroundColor="#1E0A44" 
-        BorderColor="#8C52FF" BorderWidth="2" CornerRadius="10" WidthRequest="150" />
-                <Button Text="Regresar" x:Name="irBinText" TextColor="White" FontSize="20" FontAttributes="Bold" BackgroundColor="#1E0A44" 
-        BorderColor="#8C52FF" BorderWidth="2" CornerRadius="10" WidthRequest="150" Clicked="irPagTextToBin"/>
+            <StackLayout 
+                Orientation="Horizontal" 
+                HorizontalOptions="Center" 
+                Spacing="20" 
+                Margin="35,10">
+                <Button Text="Copiar" 
+                        TextColor="White" 
+                        FontSize="20" 
+                        FontAttributes="Bold" 
+                        BackgroundColor="#1E0A44" 
+                        BorderColor="#8C52FF" 
+                        BorderWidth="2" 
+                        CornerRadius="10" 
+                        WidthRequest="150"
+                        Clicked="copyText"/>
+                <Button Text="Regresar" 
+                        x:Name="irBinText" 
+                        TextColor="White" 
+                        FontSize="20" 
+                        FontAttributes="Bold" 
+                        BackgroundColor="#1E0A44" 
+        BorderColor="#8C52FF" 
+                        BorderWidth="2" 
+                        CornerRadius="10" 
+                        WidthRequest="150" 
+                        Clicked="irPagTextToBin"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
